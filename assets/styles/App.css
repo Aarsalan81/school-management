@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  
+}
+
+.login_body{
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login_form{
+  background-color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(158, 158, 158);
+}
+#UserName-label{
+  font-family: "medium";
+  font-size: 14px;
+}
+#Password-label{
+  font-family: "medium";
+  font-size: 14px;
+}
+.main_body{
+  height: 100vh;
+  background-color: #E0E0E0;
+}
+.main{
+  padding-top: 80px;
+  padding-right: 300px;
+  padding-left: 20px;
+}
+#exit_accunt{
+  border-radius: 22px;
+  font-family: "medium";
+  background-color: #F57C00;
+}
+#exit_accunt:hover{
+  background-color: #E65100;
+}
+.muirtl-11544kk-MuiPaper-root{
+  background-image: linear-gradient(to left , #fff , #E0E0E0 );
+  box-shadow: 0px 0px 1px -1px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+#tutorial_box{
+  min-width: 275px;
+  border-radius:20px;
+  padding:10px 15px;
+  border:none;
+  background-image: linear-gradient(to bottom , #29B6F6 , #81D4FA);
+  transition-property: all;
+  transition-duration: 300ms;
+}
+#tutorial_box:hover{
+  transform: scale(0.96);
+  
+}
+.muirtl-1qbkelo-MuiCardHeader-content span{
+  font-family: 'medium';
+}
+.muirtl-ahj2mt-MuiTypography-root{
+  font-family: "medium";
+}

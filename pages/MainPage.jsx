@@ -1,5 +1,5 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react'
-import { AppBar, IconButton, Toolbar, Typography, Badge, Drawer, Paper, Button, Snackbar, Alert } from '@mui/material'
+import { AppBar, IconButton, Toolbar, Typography, Badge, Drawer,Button, Snackbar, Alert } from '@mui/material'
 import AddAlertIcon from '@mui/icons-material/AddAlert';
 import NavBar from '../components/NavBar';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -11,6 +11,7 @@ const StudentPage = lazy(() => import("./Student/StudentPage"))
 const TeacherPage = lazy(() => import("./Teacher/TeacherPage"))
 const TutorialPage = lazy(() => import("./Tutorial/TutorialPage"))
 const CoursesPage = lazy(() => import("./Course/CoursesPage"))
+const StudentCourse = lazy (() => import ("./Course/StudentCourse"))
 
 export default function MainPage(props) {
     const {islogin, setIslogin} = props;
@@ -103,6 +104,14 @@ export default function MainPage(props) {
                         element={
                             <Suspense fallback={<PageLoad />}>
                                 <CoursesPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path='/studentsCourse'
+                        element={
+                            <Suspense fallback={<PageLoad />}>
+                                <StudentCourse />
                             </Suspense>
                         }
                     />

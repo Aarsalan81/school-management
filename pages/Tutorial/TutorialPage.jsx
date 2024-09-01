@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { CardHeader, Grid, IconButton, Paper } from '@mui/material'
 import axios from 'axios';
 import Cookies from 'js-cookie'
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -27,14 +26,7 @@ export default function TutorialPage() {
   const [editTutorial, setEditTutorial] = useState(false)
   const [item, setItem] = useState({})
 
-  const bull = (
-    <Box
-      component="span"
-      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-      •
-    </Box>
-  );
+
 
   useEffect(() => {
     if (isSuccess) {
@@ -74,7 +66,7 @@ export default function TutorialPage() {
   return (
     <div>
       <Paper sx={{ padding: "10px 10px" }}>
-        <AddTutorial setIsSuccess={setIsSuccess}/>
+        <AddTutorial setIsSuccess={setIsSuccess} />
       </Paper>
 
       <Grid container spacing={2} sx={{ marginTop: "25px" }}>
@@ -93,16 +85,16 @@ export default function TutorialPage() {
               />
 
               <CardContent>
-                <div style={{textAlign:"center"}}>
-                  
+                <div style={{ textAlign: "center" }}>
+
                   <img src={Html} style={{ width: "150px", height: "100px", objectFit: "cover", borderRadius: "20px", marginBottom: "13px" }} />
                 </div>
 
                 <Typography sx={{ fontFamily: "medium" }}>
-                  {`تعداد جلسات : ${item.sessions}`}
+                  <b>تعداد جلسات</b> : {item.sessions}
                 </Typography>
                 <Typography sx={{ fontFamily: "medium" }}>
-                  {`قیمت : ${item.price}`}
+                  <b>قیمت </b> : {item.price}
                 </Typography>
               </CardContent>
               <CardActions sx={{ display: "flex", justifyContent: "center" }}>

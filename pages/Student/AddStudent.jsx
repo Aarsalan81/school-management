@@ -197,7 +197,7 @@ export default function AddStudent(props) {
 
             </Dialog>
             <Snackbar open={opensnackbar} autoHideDuration={3000} onClose={() => setOpensnackbar(false)} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
-                <Alert severity={alertType} onClose={() => setOpensnackbar(false)}>
+                <Alert sx={{fontFamily:"light"}} severity={alertType} onClose={() => setOpensnackbar(false)}>
                     {alertMassage}
                 </Alert>
             </Snackbar>

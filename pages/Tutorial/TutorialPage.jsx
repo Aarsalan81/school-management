@@ -55,13 +55,6 @@ export default function TutorialPage() {
     setItem(row)
     setEditTutorial(true)
   }
-  // const handleImage = (name) => {
-  //   if(name === "HTML") {
-  //     return Html
-  //   }else {
-  //     return Css
-  //   }
-  // }
 
   return (
     <div>
